@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Passport JS</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <style media="screen">
+        
+        :root { font-size: 150%; }
+        h1, h2 { font-weight: normal; }
+        input {
+            font-family: inherit;
+            font-size: 18px;
+            display: block;
+            margin: 12px 0;
+            padding: 9px;
+            outline: none;
+            box-sizing: border-box;
+            width: 400px;
+        }
+        
+        input:nth-child(1) { width: 320px; }
+        input:nth-child(2) { width: 400px; }
+        input:nth-child(3) { width: 420px; }
+        input:nth-child(4) { width: 370px; }
+        input:nth-child(5) { width: 360px; }
+        
+        body {
+            margin: 72px 180px 0;
+            font-family: 'Cabin', sans-serif;
+        }
+        
+        form {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Passport JS</h1>
+    
+    <form action="/reset/<%= token %>" method="post" autocomplete="off">
+        <h2>Reset Password</h2>
+        <input type="password" name="password" placeholder="New Password">
+        <input type="password" name="confirm" placeholder="Confirm Password">
+        <input type="submit" value="Update Password">
+        
+    </form>
+    
+    
+    
+</body>
+</html>

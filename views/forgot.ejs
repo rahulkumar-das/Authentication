@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Passport JS</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <style media="screen">
+        
+        :root { font-size: 150%; }
+        h1, h2 { font-weight: normal; }
+        input {
+            font-family: inherit;
+            font-size: 18px;
+            display: block;
+            margin: 12px 0;
+            padding: 9px;
+            outline: none;
+            box-sizing: border-box;
+            width: 400px;
+        }
+        
+        input:nth-child(1) { width: 320px; }
+        input:nth-child(2) { width: 400px; }
+        input:nth-child(3) { width: 420px; }
+        input:nth-child(4) { width: 370px; }
+        input:nth-child(5) { width: 360px; }
+        
+        body {
+            margin: 72px 180px 0;
+            font-family: 'Cabin', sans-serif;
+        }
+        
+        form {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Passport JS</h1>
+
+    <div>
+        <% if(error && error.length > 0) { %>
+          <div><p><%=error %></p></div>
+        <% } %>
+        
+        <% if(success && success.length > 0) { %>
+          <div><p><%= success %></p></div>
+        <% } %>
+     </div>
+    
+    <form action="/forgot" method="post" autocomplete="off">
+        <h2>Forgot Password</h2>
+        <input type="email" name="email" placeholder="Email">
+        <input type="submit" value="Reset Password">
+        
+    </form>
+    
+    
+    
+</body>
+</html>
